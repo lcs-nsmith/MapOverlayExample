@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44B71C04298AD416001E26EB /* DirectionsFromLindsay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B71C03298AD416001E26EB /* DirectionsFromLindsay.swift */; };
+		44B71C07298AD42B001E26EB /* DirectionsFromPeterborough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B71C05298AD42B001E26EB /* DirectionsFromPeterborough.swift */; };
+		44B71C08298AD42B001E26EB /* DirectionsFromEntranceToBryanJonesTheatre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B71C06298AD42B001E26EB /* DirectionsFromEntranceToBryanJonesTheatre.swift */; };
 		81960518298ACA0900C5C28B /* MapOverlayExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81960517298ACA0900C5C28B /* MapOverlayExampleApp.swift */; };
-		8196051A298ACA0900C5C28B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81960519298ACA0900C5C28B /* ContentView.swift */; };
 		8196051C298ACA0A00C5C28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8196051B298ACA0A00C5C28B /* Assets.xcassets */; };
 		8196051F298ACA0A00C5C28B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8196051E298ACA0A00C5C28B /* Preview Assets.xcassets */; };
 		81960542298ACA2900C5C28B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81960541298ACA2900C5C28B /* MapView.swift */; };
@@ -32,9 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44B71C03298AD416001E26EB /* DirectionsFromLindsay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsFromLindsay.swift; sourceTree = "<group>"; };
+		44B71C05298AD42B001E26EB /* DirectionsFromPeterborough.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsFromPeterborough.swift; sourceTree = "<group>"; };
+		44B71C06298AD42B001E26EB /* DirectionsFromEntranceToBryanJonesTheatre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsFromEntranceToBryanJonesTheatre.swift; sourceTree = "<group>"; };
 		81960514298ACA0900C5C28B /* MapOverlayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapOverlayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81960517298ACA0900C5C28B /* MapOverlayExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlayExampleApp.swift; sourceTree = "<group>"; };
-		81960519298ACA0900C5C28B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8196051B298ACA0A00C5C28B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8196051E298ACA0A00C5C28B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81960524298ACA0A00C5C28B /* MapOverlayExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapOverlayExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +71,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44AA0BD6298AD3650086A529 /* DirectionsViews */ = {
+			isa = PBXGroup;
+			children = (
+				44B71C06298AD42B001E26EB /* DirectionsFromEntranceToBryanJonesTheatre.swift */,
+				44B71C05298AD42B001E26EB /* DirectionsFromPeterborough.swift */,
+				44B71C03298AD416001E26EB /* DirectionsFromLindsay.swift */,
+			);
+			path = DirectionsViews;
+			sourceTree = "<group>";
+		};
 		8196050B298ACA0900C5C28B = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				81960517298ACA0900C5C28B /* MapOverlayExampleApp.swift */,
-				81960519298ACA0900C5C28B /* ContentView.swift */,
+				44AA0BD6298AD3650086A529 /* DirectionsViews */,
 				81960541298ACA2900C5C28B /* MapView.swift */,
 				8196051B298ACA0A00C5C28B /* Assets.xcassets */,
 				8196051D298ACA0A00C5C28B /* Preview Content */,
@@ -235,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8196051A298ACA0900C5C28B /* ContentView.swift in Sources */,
+				44B71C04298AD416001E26EB /* DirectionsFromLindsay.swift in Sources */,
+				44B71C08298AD42B001E26EB /* DirectionsFromEntranceToBryanJonesTheatre.swift in Sources */,
 				81960542298ACA2900C5C28B /* MapView.swift in Sources */,
+				44B71C07298AD42B001E26EB /* DirectionsFromPeterborough.swift in Sources */,
 				81960518298ACA0900C5C28B /* MapOverlayExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

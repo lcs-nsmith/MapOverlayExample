@@ -11,7 +11,9 @@ import SwiftUI
 struct MapOverlayExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DirectionsFromLindsay()
+            DirectionsFromPeterborough()
+            DirectionsFromEntranceToBryanJonesTheatre()
         }
     }
 }

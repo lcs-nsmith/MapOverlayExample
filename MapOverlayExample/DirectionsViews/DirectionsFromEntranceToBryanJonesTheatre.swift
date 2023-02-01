@@ -10,7 +10,7 @@ import SwiftUI
 
 // NOTE: Based entirely on this answer on SO...
 //       https://stackoverflow.com/a/56943282
-struct ContentView: View {
+struct DirectionsFromEntranceToBryanJonesTheatre: View {
     
     @State var route: MKPolyline?
     
@@ -18,15 +18,18 @@ struct ContentView: View {
         MapView(route: $route)
             .onAppear {
                 self.findCoffee()
+                MKMapView.appearance().mapType = .satelliteFlyover
             }
     }
     
+    // Entrance Coordinates: 44.437317, -78.265206
+    
     func findCoffee() {
-        let start = CLLocationCoordinate2D(latitude: 37.332693, longitude: -122.03071)
+        let start = CLLocationCoordinate2D(latitude: 44.437317, longitude: -78.265206)
         let region = MKCoordinateRegion(center: start, latitudinalMeters: 2000, longitudinalMeters: 2000)
         
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = "coffee"
+        request.naturalLanguageQuery = "44.440165, -78.264203"
         request.region = region
         
         MKLocalSearch(request: request).start { response, error in
@@ -44,8 +47,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct DirectionsFromEntranceToBryanJonesTheatre_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DirectionsFromEntranceToBryanJonesTheatre()
     }
 }
