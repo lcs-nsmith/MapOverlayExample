@@ -29,7 +29,7 @@ struct DirectionsFromEntranceToBryanJonesTheatre: View {
         let region = MKCoordinateRegion(center: start, latitudinalMeters: 2000, longitudinalMeters: 2000)
         
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = "44.440165, -78.264203"
+        request.naturalLanguageQuery = "44.439697, -78.265033"
         request.region = region
         
         MKLocalSearch(request: request).start { response, error in
